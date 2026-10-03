@@ -29,7 +29,7 @@ function AdminDashboard({ onLogout }) {
     const fetchFaculty = async () => {
         try {
             const response = await fetch(
-                "http://localhost:5000/api/faculty"
+                "https://facultyfinder-hc9s.onrender.com/api/faculty"
             );
 
             const data = await response.json();
@@ -53,7 +53,7 @@ function AdminDashboard({ onLogout }) {
 
         try {
             const response = await fetch(
-                "http://localhost:5000/api/faculty",
+                "https://facultyfinder-hc9s.onrender.com/api/faculty",
                 {
                     method: "POST",
                     headers: {
@@ -113,7 +113,7 @@ function AdminDashboard({ onLogout }) {
 
         try {
             const response = await fetch(
-                `http://localhost:5000/api/timetable/faculty/${facultyDatabaseId}`
+                `https://facultyfinder-hc9s.onrender.com/api/timetable/faculty/${facultyDatabaseId}`
             );
 
             const data = await response.json();
@@ -144,7 +144,7 @@ function AdminDashboard({ onLogout }) {
 
         try {
             const response = await fetch(
-                "http://localhost:5000/api/timetable",
+                "https://facultyfinder-hc9s.onrender.com/api/timetable",
                 {
                     method: "POST",
                     headers: {
@@ -186,7 +186,7 @@ function AdminDashboard({ onLogout }) {
     const handleDeleteTimetable = async (id) => {
         try {
             const response = await fetch(
-                `http://localhost:5000/api/timetable/${id}`,
+                `https://facultyfinder-hc9s.onrender.com/api/timetable/${id}`,
                 {
                     method: "DELETE"
                 }
