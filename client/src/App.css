@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+.dashboard {
+    min-height: 100vh;
+}
+
+/* Navbar */
+
+.dashboard-nav {
+    height: 70px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-right span {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav-right button {
+    border: none;
+    background: #eef2ff;
+    color: #2563eb;
+    padding: 9px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.nav-right button:hover {
+    background: #dbeafe;
+}
+
+/* Main content */
+
+.dashboard-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 25px;
+}
+
+/* Welcome */
+
+.welcome-section {
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    color: white;
+    padding: 45px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.small-title {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+    opacity: 0.85;
+}
+
+.welcome-section h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 0 0 15px;
+}
+
+.description {
+    font-size: 16px;
+    max-width: 600px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Search */
+
+.search-section {
+    margin-bottom: 35px;
+}
+
+.search-section input {
+    width: 100%;
+    padding: 17px 20px;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    font-size: 15px;
+    outline: none;
+    background: white;
+}
+
+.search-section input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px #dbeafe;
+}
+
+/* Faculty heading */
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.section-heading span {
+    background: #e0e7ff;
+    color: #4338ca;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Faculty cards */
+
+.faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.faculty-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 24px;
+    transition: 0.2s;
+}
+
+.faculty-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.faculty-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 22px;
+}
+
+.faculty-avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #dbeafe;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.faculty-header h3 {
+    margin: 0 0 5px;
+    font-size: 18px;
+}
+
+.faculty-header p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+/* Faculty information */
+
+.faculty-info {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.faculty-info p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #4b5563;
+}
+
+.faculty-info strong {
+    color: #111827;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Availability */
+
+.availability {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    padding: 10px 12px;
+    background: #f9fafb;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.status-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.status-dot.available {
+    background: #22c55e;
+}
+
+.status-dot.busy {
+    background: #ef4444;
+}
+
+.status-dot.in-class {
+    background: #f59e0b;
+}
+
+.status-dot.unknown {
+    background: #9ca3af;
+}
+
+/* Meeting button */
+
+.meeting-button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 9px;
+    background: #2563eb;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.meeting-button:hover {
+    background: #1d4ed8;
+}
+
+/* Empty state */
+
+.empty-state {
+    background: white;
+    border: 1px dashed #d1d5db;
+    padding: 50px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.empty-state h3 {
+    margin-bottom: 8px;
+}
+
+.empty-state p {
+    color: #6b7280;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    .faculty-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .dashboard-nav {
+        padding: 0 20px;
+    }
+
+    .dashboard-content {
+        padding: 30px 15px;
+    }
+
+    .welcome-section {
+        padding: 30px 25px;
+    }
+
+    .welcome-section h1 {
+        font-size: 30px;
+    }
+
+    .faculty-grid {
+        grid-template-columns: 1fr;
+    }
+}

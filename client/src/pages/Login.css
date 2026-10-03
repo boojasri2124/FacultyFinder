@@ -1,0 +1,123 @@
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f7fb;
+    font-family: Arial, sans-serif;
+}
+
+.login-card {
+    width: 850px;
+    min-height: 500px;
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.login-brand {
+    width: 45%;
+    background: #2563eb;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.login-brand h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.login-brand p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.login-form-section {
+    width: 55%;
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form-section h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+    color: #1e293b;
+}
+
+.login-description {
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+.login-form-section label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.login-form-section input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px;
+    margin-bottom: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.login-form-section input:focus {
+    border-color: #2563eb;
+}
+
+.login-form-section button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-form-section button:hover {
+    background: #1d4ed8;
+}
+
+.login-message {
+    margin-top: 20px;
+    text-align: center;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+@media (max-width: 700px) {
+    .login-card {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .login-brand,
+    .login-form-section {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .login-brand {
+        padding: 35px;
+    }
+
+    .login-form-section {
+        padding: 35px;
+    }
+}
